@@ -3,7 +3,8 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import Aggregate
 import concurrency
 import sys
-PORT_NUMBER = 8080
+import os
+PORT_NUMBER = int(os.environ["PATH"])
 from urllib.parse import parse_qs
 #This class will handles any incoming request from the browser
 class myHandler(BaseHTTPRequestHandler):
