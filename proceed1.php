@@ -6,7 +6,7 @@
 	$num=$_POST['number1'];
 	//$num1=$_POST['number2'];
 	
-	$url= "http://0.0.0.0:8080/?city=".$city."&checkIn=".$checkIn."&checkOut=".$checkOut."&num=1&num1=".$num;
+	$url= "https://pythondata.herokuapp.com:8080/?city=".$city."&checkIn=".$checkIn."&checkOut=".$checkOut."&num=1&num1=".$num;
 	//$url="http://127.0.0.1:8080/?city=Singapore&checkIn=05/05/2019&checkOut=05/06/2019&num=1&num1=2";
 
 	$xml = file_get_contents($url);
