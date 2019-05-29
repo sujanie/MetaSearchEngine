@@ -42,7 +42,7 @@ def run():
         try:
                 #Create a web server and define the handler to manage the
                 #incoming request
-                server = HTTPServer(('128.199.138.206', PORT_NUMBER), myHandler)
+                server = HTTPServer(('0.0.0.0', PORT_NUMBER), myHandler)
                 print ("Started httpserver on port " , PORT_NUMBER)
                 #Wait forever for incoming htto requests
                 server.serve_forever()
