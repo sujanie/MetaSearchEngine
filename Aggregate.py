@@ -19,6 +19,9 @@ import json
       
 
 def aggregate(datalist):
+    if(len(datalist))!=0){
+      print("success")
+    }
     dict3=booking.parse(datalist[6])
     #print(len(data[1].content))
     dict1=hotels.get(datalist[0:6])
