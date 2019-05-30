@@ -31,9 +31,9 @@ class myHandler(BaseHTTPRequestHandler):
                         self.send_header('Content-type','text/html')
                         self.end_headers()
                         data=Aggregate.aggregate(details)
-                        if (data!=None){
+                        if (data!=None):
                                 print("success")
-                        }
+                        
                         # Send the html message
                         
                         data=str.encode(data)
